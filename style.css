@@ -1,0 +1,540 @@
+/*
+Theme Name: portfolio!
+*/
+
+
+
+/*　共通スタイル　*/
+body {
+    font-family: Arial, Helvetica, sans-serif, "Hiragino Kaku Gothic ProN", Meiryo;
+    color: dimgray;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    padding-left: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: gray;
+}
+
+
+/*　スマホスタイル　Header */
+header {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+}
+
+.header {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    border: 2px solid dimgray;
+    line-height: 1;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px 3px 0 3px;
+    height: 32px;
+    width: 32px;
+    font-size: 30px;
+    margin: 0 0 0 4px;
+}
+
+#menu-sp {
+    position: absolute;
+    right: 0;    
+    font-size: 40px;
+    padding-top: 1px;
+}
+
+.nav-pc-list {
+    display: none;
+}
+
+/*　SP Menu */
+#nav-sp {
+    background-color: gray;
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+
+#nav-sp .logo {
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+#nav-sp a {
+    color: whitesmoke;
+}
+
+#nav-sp a:visited {
+    color: whitesmoke;
+}
+
+
+
+#close-sp {
+    position: absolute;
+    top: 20px;
+    right: 4%;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    line-height: 2;
+    color: whitesmoke;
+}
+
+.menu {
+    font-size: 18px;
+    margin: 20px auto 20px 20px;
+    color: whitesmoke;
+}
+
+.menu > a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    top: 61px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-visual {
+    position: relative;
+}
+
+.main-message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    border-radius: 50% 0 0 50%;
+}
+
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -53px;
+    margin-left: -10px;
+}
+
+/* WORK section */
+
+#works {
+    padding: 60px 0 ;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 4%;
+    background-color: #f7f7f7;
+}
+
+.work-item {
+    width: 45%;
+    padding: 1%;
+    margin-bottom: 20px;
+}
+
+/* SKILL section */
+
+#skills {
+    padding: 60px 0 ;
+}
+
+.skill-container {
+    display: block;
+}
+
+.skill-img {
+    width: 60px;
+    margin: auto;
+}
+
+.skill-text {
+    width: 70%;
+    padding: 10px;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 100%;
+    }
+
+.skill-img i {
+    font-size: 60px;
+}
+
+/* ABOUT section */
+
+#about {
+    padding: 60px 0;
+}
+/* 写真が若干縦長のためAboutの写真が楕円になっている。これは元の写真を正方形にするのが正しいやり方か、他にやり方はあるか？ */
+.about-img {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.about-img img {
+    border-radius: 50%;
+}
+
+.about-text {
+    padding: 10px 20px;
+}
+
+.about-text p {
+    line-height: 1.7;
+}
+
+/* CONTACT section */
+#contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sns {
+    width: 20%;
+    display: inline-flex;
+}
+
+.sns a {
+    width: 35%;
+    margin: 20px auto;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    top: 61px;
+    background-color: gray;
+    padding: 8px;
+    margin: auto;
+    border-color: whitesmoke;
+}
+
+footer .logo {
+    margin: 0 auto;
+    border-color: whitesmoke;
+}
+
+footer a {
+    color: whitesmoke;    
+}
+
+footer a:visited {
+    color: whitesmoke;
+}
+
+/* works.html */
+
+.work-maintext {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+}
+
+#works-journey {
+    padding: 60px 0;
+}
+
+#works-journey p {
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+.arrow {
+    text-align: center;
+}
+
+.step-description {
+    padding: 15px;
+}
+
+.step-img {
+    width: 90%;
+    margin: auto;
+}
+
+.work-step {
+    padding: 0 0 60px 0;
+}
+
+.work-step p {
+    padding-left: 15px;
+}
+
+.work-step h3 {
+    padding-left: 25px;
+    font-size: 20px;
+    position: relative;
+}
+
+.work-step h3::before {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 4px;
+    height: 100%;
+    content: "";
+    border-radius: 3px;
+    background-color: #333;
+  }
+
+/*================
+ PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+
+h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.main-text p {
+    font-size: 30px;
+}
+
+/* PC HEADER - MENU */
+.header-sp {
+    display: none;
+}
+
+.nav-sp {
+    display: none;
+}
+
+#menu-sp {
+    display: none;
+}
+
+#nav-pc {
+    margin: 0 auto;
+    width: 700px;
+}
+
+.nav-pc-list {
+    display: flex;
+}
+
+.nav-pc-list li {
+    display: inline;
+    margin: auto;
+}
+
+.menu-pc {
+    margin: 10px auto;
+}
+
+.menu-pc li{
+    height: auto;
+    margin: auto 20px;
+    text-decoration: none;
+}
+
+.menu-pc a {
+    color: gray;
+    font-size: 18px;
+}
+
+.menu-pc > a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+/* WORK section / PC */
+
+.work-maintext {
+    font-size: 60px;
+}
+
+.work-container {
+    padding: 1rem 10%;
+}
+
+.work-item {
+    width: 40%;
+}
+
+/* SKILL section */
+.skill-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 40%;
+    }
+
+.skill-item h3 {
+    margin: 15px 0 5px 0;
+}
+
+.skill-img {
+    width: 10%;
+    margin: auto;
+}
+
+.skill-img i {
+    font-size: 40px;
+}
+
+/* ABOUT section / PC */
+
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-img {
+    width: 15%;
+    margin: auto;
+
+}
+
+.about-img img {
+    border-radius: 50%;
+}
+
+.about-text {
+    width: 70%;
+    padding: 10px 20px;
+}
+
+.about-text p {
+    line-height: 1.7;
+}
+
+.sns a {
+    width: 20%;
+    margin-top: 40px;
+}
+
+/* works.html */
+
+#works-journey {
+    width: 70%;
+    padding: 60px 0; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#works-journey p {
+    width: 600px;
+}
+
+.e2ejourney {
+    margin-top: 20px;
+}
+
+.e2ejourney p {
+    font-size: 25px;
+}
+
+#work-details {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-step {
+    padding: 60px 0;
+}
+
+.work-step p {
+    margin-left: 30px;
+}
+
+.work-step h3 {
+    margin-left: 30px;
+}
+
+.step-description {
+    margin: auto;
+    text-align: center;
+}
+
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Works</title>
+    <meta name="description" content="これまでにやってきたこと">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- HEADER-->
+    <header>
+        <!-- MENU -->
+        <div class="header">
+            <!-- Header,navigation / Smart Phone -->
+            <div class="header-sp">
+                <a href="index.html"><p class="logo">藏</p></a>
+            </div>
+            <i id="menu-sp" class="bi bi-list" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'"></i>
+        </div>
+        <nav id="nav-sp">
+            <i id="close-sp" class="bi bi-x-circle" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'"></i>
+              <ul>
+                <li class="logo"><a href="index.html">藏</a></li>
+                <li class="menu"><a href="index.html#works" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a></li>
+                <li class="menu"><a href="index.html#skills" onclick="document.getElementById('nav-sp').style.display = 'none'">SKILLS</a></li>
+                <li class="menu"><a href="index.html#about" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a></li>
+                <li class="menu"><a href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+              </ul>
+        </nav>
+        <!-- Header,navigation / PC -->
+        <nav id="nav-pc">
+            <ul class="nav-pc-list">
+                <li class="menu-pc"><a href="index.html#works">WORKS</a></li>
+                <li class="menu-pc"><a href="index.html#skills">SKILLS</a></li>
+                <li class="logo"><a href="index.html">藏</a></li>
+                <li class="menu-pc"><a href="index.html#about">ABOUT</a></li>
+                <li class="menu-pc"><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="main-visual">
+            <div class="work-main-img">
+                <img src="images/work-main-hands.jpg">
+                <div class="work-maintext">つなぐ</div>
+            </div>
+        </section>
+        <section id="works-journey">
+                <h2>WORKS</h2>
+                <p>Customer Centric E2E digital journey</p>
+                <p>インターネット上での情報検索から、問い合わせに辿り着くまでの一連の行動がスムーズに繋がることを考慮したアイデア・デザインをご提案いたします。</p>
+            <div class="e2ejourney">
+                <a class="journey-step" href="works.html#step1">
+                    <p><i class="bi bi-search"></i> 探す・見つける</p>
+                </a>
+            </div>
+            <div class="arrow"><i class="bi bi-caret-down"></i></div>
+            <div class="e2ejourney">
+                <a class="journey-step" href="works.html#step2">
+                    <p><i class="bi bi-book"></i> 知る・学ぶ</p>
+                </a>
+            </div>
+            <div class="arrow"><i class="bi bi-caret-down"></i></div>
+            <div class="e2ejourney">
+                <a class="journey-step" href="works.html#step4">
+                    <p><i class="bi bi-envelope"></i> つながる</p>
+                </a>
+            </div>           
+        </section>
+        <section id="work-details">
+                <div class="work-step">
+                    <h2 id="step1"><i class="bi bi-search"></i> 探す・見つける</h2>
+                    <p class="step-description">集客ターゲットと製品・サービス・ブランドイメージ・戦略を考慮したデザインを提案。<br>各種SNS向けのデザインも作成可能です。</p>
+                    <div class="step-img"><img src="images/works/photoshop.png" alt=""></div>
+                    <h3>担当</h3>
+                    <p>デザイン</p>
+                    <h3>サイトの目的</h3>
+                    <p>お客様の自社メディアサイトでの使用。また広告での使用。</p>
+                    <h3>使用技術</h3>
+                    <p>Adobe Photoshop</p>
+                    <h3>デザインについて</h3>
+                    <p>メインターゲットが女性であることを考慮した配色をさせていただきました。</p>
+                </div>
+                <div class="work-step">
+                    <h2 id="step2"><i class="bi bi-book"></i> 知る・学ぶ</h2>
+                    <p class="step-description">顧客が求める情報（口コミ、料金設定、店の雰囲気など）が顧客目線で簡単に見つけられるサイトを作成。<br>従業員によるブログの更新など情報管理に負担をかけないよう、シンプルなテンプレートを使用。</p>
+                    <div class="step-img"><img src="images/works/wordpress1.png" alt=""></div>
+                    <h3>URL</h3>
+                    <p><a href="https://7z-design.com/hairtech/" target="_blank">URL</a></p>
+                    <h3>担当</h3>
+                    <p>WordPress構築・コーディング</p>
+                    <h3>サイトの目的</h3>
+                    <p>店舗の認知と集客</p>
+                    <h3>使用技術</h3>
+                    <p>WordPress</p>
+                    <h3>デザインについて</h3>
+                    <p>20~30代の女性のお客様が多い店舗のため、お客様の層に最適な画像素材を使用しております。</p>
+                </div>
+                <div class="work-step">
+                    <h2 id="step3"><i class="bi bi-book"></i> 知る・学ぶ</h2>
+                    <p class="step-description">入学を検討している人や在校生・卒業生向けに大学の最新情報をわかりやすく紹介。</p>
+                    <div class="step-img"><img src="images/works/wordpress2.png" alt=""></div>
+                    <h3>URL</h3>
+                    <p><a href="https://7z-design.com/sam/" target="_blank">URL</a></p>
+                    <h3>担当</h3>
+                    <p>デザイン・コーディング</p>
+                    <h3>サイトの目的</h3>
+                    <p>大学の紹介</p>
+                    <h3>使用技術</h3>
+                    <p>WordPress/PHP</p>
+                    <h3>デザインについて</h3>
+                    <p>同じようなデザインで学校機関や企業様のHPを作成することが可能です。</p>
+                </div>
+                <div class="work-step">
+                    <h2 id="step4"><i class="bi bi-envelope"></i> つながる</h2>
+                    <p class="step-description">HPから各種問い合わせフォームや窓口につなげる。</p>
+                    <div class="step-img"><img src="images/works/htmlcss.png" alt=""></div>
+                    <h3>URL</h3>
+                    <p><a href="https://7z-design.com/socialtech/index.html" target="_blank">SocialTech</a></p>
+                    <h3>担当</h3>
+                    <p>デザイン</p>
+                    <h3>サイトの目的</h3>
+                    <p>企業の紹介</p>
+                    <h3>使用技術</h3>
+                    <p>html, css</p>
+                    <h3>デザインについて</h3>
+                    <p>企業のHPから問い合わせを容易にできるよう、各種コンタクトフォームに対応いたします。</p>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p class="logo"><a href="index.html">藏</a></p>
+    </footer>
+</body>
+</html>
